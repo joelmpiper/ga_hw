@@ -1,6 +1,0 @@
-Here is a new text file
-
-with a couple lines that will work with md, maybe?
-
-
-Test line 2
