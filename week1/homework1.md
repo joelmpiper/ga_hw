@@ -10,34 +10,21 @@
 
 5. *grep "Chicken Burrito" chipotle.tsv | grep "Black Beans" | cut -f2 | paste -sd+ - | bc* yields **307** total chicken burritos with black beans ordered, in a total of 282 unique order/item combinations. For the Chicken Burrito with Pinto Beans, *grep "Chicken Burrito" chipotle.tsv | grep "Pinto Beans" | cut -f2 | paste -sd+ - | bc* there are **108** in 105 unique order/item combinations. Therefore, the **Chicken Burrito with Black Beans** is the more common order. 
 
-6. See the list of 13 files below:
+6. See the list of 13 files below:  
+  ../../DAT-DC-10//data/airlines.csv  
+  ../../DAT-DC-10//data/bank-additional.csv  
+  ../../DAT-DC-10//data/bikeshare.csv  
+  ../../DAT-DC-10//data/chipotle.tsv  
+  ../../DAT-DC-10//data/drinks.csv  
+  ../../DAT-DC-10//data/hitters.csv  
+  ../../DAT-DC-10//data/imdb_1000.csv  
+  ../../DAT-DC-10//data/sms.tsv  
+  ../../DAT-DC-10//data/titanic.csv  
+  ../../DAT-DC-10//data/ufo.csv  
+  ../../DAT-DC-10//data/vehicles_test.csv  
+  ../../DAT-DC-10//data/vehicles_train.csv  
+  ../../DAT-DC-10//data/yelp.csv  
 
-../../DAT-DC-10//data/airlines.csv
-
-../../DAT-DC-10//data/bank-additional.csv
-
-../../DAT-DC-10//data/bikeshare.csv
-
-../../DAT-DC-10//data/chipotle.tsv
-
-../../DAT-DC-10//data/drinks.csv
-
-../../DAT-DC-10//data/hitters.csv
-
-../../DAT-DC-10//data/imdb_1000.csv
-
-../../DAT-DC-10//data/sms.tsv
-
-../../DAT-DC-10//data/titanic.csv
-
-../../DAT-DC-10//data/ufo.csv
-
-../../DAT-DC-10//data/vehicles_test.csv
-
-../../DAT-DC-10//data/vehicles_train.csv
-
-../../DAT-DC-10//data/yelp.csv 
-
-*find ../../DAT-DC-10/ -name "*.csv" -o -name "*.tsv"*
+  *find ../../DAT-DC-10/ -name "*.csv" -o -name "*.tsv"*
 
 7. *grep -r -o dictionary ../../DAT-DC-10/ | wc -l* shows that there are **88** times the word *dictionary* is shown in the DAT-DC-10 files. This is the same as the number of lines that contain *dictionary*.
