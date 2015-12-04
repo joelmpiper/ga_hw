@@ -10,7 +10,7 @@
 
 5. *grep "Chicken Burrito" chipotle.tsv | grep "Black Beans" | cut -f2 | paste -sd+ - | bc* yields **307** total chicken burritos with black beans ordered, in a total of 282 unique order/item combinations. For the Chicken Burrito with Pinto Beans, *grep "Chicken Burrito" chipotle.tsv | grep "Pinto Beans" | cut -f2 | paste -sd+ - | bc* there are **108** in 105 unique order/item combinations. Therefore, the **Chicken Burrito with Black Beans** is the more common order. 
 
-6.
+6. See the list of 13 files below:
 
 ../../DAT-DC-10//data/airlines.csv
 
