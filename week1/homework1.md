@@ -1,29 +1,42 @@
 # Homework 1
 
-1. Each row of the chipotle.tsv corresponds to a unique item in a unique order. Each column represents a different field (or property) associated with the row, as identified in the first (header) row, including, *order_id*, *quantity*, *item_name*, *choice_description*, and *item_price*.
+1. Each row of the chipotle.tsv corresponds to a unique item in a unique order. Each column represents a different field (or property) associated with the row, as identified in the first (header) row, including *order_id*, *quantity*, *item_name*, *choice_description*, and *item_price*.
 
-2. The unique_id seems to track each of the individual orders. Also, these numbers seems to be sequential such that the unique_id of the last line identified in *tail* should contain the number of orders, **1834**.
+2. The *unique_id* seems to track each of the individual orders. Also, these numbers seems to be sequential such that the *unique_id* of the last line identified in *tail* should contain the number of orders, **1834**.
 
 3. *wc -l chipotle.tsv* yields **4623** lines. The first line is the header, so there would be one fewer unique order/item combination.
 
-4. *grep "Chicken Burrito" chipotle.tsv | cut -f2 | paste -sd+ - | bc* yields **591** total chicken burritos ordered, in a total of 553 unique order/item combinations. For the Steak Burrito, *grep "Steak Burrito" chipotle.tsv | cut -f2 | paste -sd+ - | bc* there are **386** in 368 unique order/item combinations. Therefore, the *Chicken* Burrito is the more common order. 
+4. *grep "Chicken Burrito" chipotle.tsv | cut -f2 | paste -sd+ - | bc* yields **591** total chicken burritos ordered, in a total of 553 unique order/item combinations. For the Steak Burrito, *grep "Steak Burrito" chipotle.tsv | cut -f2 | paste -sd+ - | bc* there are **386** in 368 unique order/item combinations. Therefore, the **Chicken Burrito** is the more common order. 
 
-5. *grep "Chicken Burrito" chipotle.tsv | grep "Black Beans" | cut -f2 | paste -sd+ - | bc* yields **307** total chicken burritos with black beans ordered, in a total of 282 unique order/item combinations. For the Chicken Burrito with Pinto Beans, *grep "Chicken Burrito" chipotle.tsv | grep "Pinto Beans" | cut -f2 | paste -sd+ - | bc* there are **108** in 105 unique order/item combinations. Therefore, the *Chicken* Burrito with Black Beans is the more common order. 
+5. *grep "Chicken Burrito" chipotle.tsv | grep "Black Beans" | cut -f2 | paste -sd+ - | bc* yields **307** total chicken burritos with black beans ordered, in a total of 282 unique order/item combinations. For the Chicken Burrito with Pinto Beans, *grep "Chicken Burrito" chipotle.tsv | grep "Pinto Beans" | cut -f2 | paste -sd+ - | bc* there are **108** in 105 unique order/item combinations. Therefore, the **Chicken Burrito with Black Beans** is the more common order. 
 
-6.'''
+6.
+
 ../../DAT-DC-10//data/airlines.csv
+
 ../../DAT-DC-10//data/bank-additional.csv
+
 ../../DAT-DC-10//data/bikeshare.csv
+
 ../../DAT-DC-10//data/chipotle.tsv
+
 ../../DAT-DC-10//data/drinks.csv
+
 ../../DAT-DC-10//data/hitters.csv
+
 ../../DAT-DC-10//data/imdb_1000.csv
+
 ../../DAT-DC-10//data/sms.tsv
+
 ../../DAT-DC-10//data/titanic.csv
+
 ../../DAT-DC-10//data/ufo.csv
+
 ../../DAT-DC-10//data/vehicles_test.csv
+
 ../../DAT-DC-10//data/vehicles_train.csv
-../../DAT-DC-10//data/yelp.csv '''
+
+../../DAT-DC-10//data/yelp.csv 
 
 *find ../../DAT-DC-10/ -name "*.csv" -o -name "*.tsv"*
 
