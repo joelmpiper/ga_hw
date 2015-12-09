@@ -29,4 +29,4 @@
 
 7. *grep -r -o dictionary ../../DAT-DC-10/ | wc -l* shows that there are **88** times the word *dictionary* is shown in the DAT-DC-10 files. This is the same as the number of lines that contain *dictionary*.
 
-8. The maximum number of identical items in a single order is **15**, found by *cut -f2 chipotle.tsv | sort -n | tail -2 | head -1*. The *tail* then *head* is only to remove the header. We can then search for the item with *cut -f2,3,4 chipotle.tsv | grep 15* (not guaranteed to work if *15* is in the text) to find that the item was *Side of Chips*.
+8. The maximum number of identical items in a single order is **15**, found by *cut -f2 chipotle.tsv | sort -n | tail -2 | head -1*. The *tail* then *head* is only to remove the header. We can then search for the item with *cut -f2,3,4 chipotle.tsv | grep 15* (not guaranteed to work if *15* is in the text) to find that the item was *Chips and Fresh Tomato Salsa*.
