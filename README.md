@@ -1,4 +1,3 @@
-# ga_hw
-General Assembly Homework
+## General Assembly Homework
 
-Here is another line to test the push to remote
+A selection of homework assignments submitted for the General Assembly Data Science Course
